@@ -1,0 +1,88 @@
+*{
+    /* background-color: rgb(0, 0, 0); */
+  
+}
+
+.section{
+    background-color: aqua;
+    position: relative;
+   
+    top: 140px;
+    width: 900px;
+    height: 650px;
+    left: 50px;
+    padding: 20px;
+    background: rgba(250, 31, 31, 0.25);
+    box-shadow: 0 8px 32px 0 rgb(83, 66, 238);
+    backdrop-filter: blur(0.3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.18);
+   }
+span{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: rgb(89, 236, 31);
+    /* width: 150px; */
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    width: 27%;
+
+    
+}
+ button:hover{
+     color: rgb(51, 1, 66);
+     background-color: white;
+     
+     cursor: pointer;
+     transform: 1.5%;
+ }
+
+ button:active{
+     box-shadow: 3px 3px 3px red;
+     border: none;
+ }
+h1{
+    font-size: 100px;
+    display: flex;
+    color: rgb(27, 255, 6);
+    justify-content: center;
+}
+
+img{
+    height: 300px;
+}
+p{
+    height: 400px;
+    font-size: 40px;
+    background-color: rgb(214, 163, 154);
+    border-radius: 10px;
+    padding: 8px;
+    font-family: cursive;
+}
+h2{
+    color: red;
+    font-size: 40px;
+    padding: 5px;
+    text-decoration: 6px solid rgb(3, 247, 64) underline;
+    text-shadow: 2px 2px 4px rgb(131, 108, 108);
+}
+h3{
+text-align: end;
+position: relative;
+left: -240px;
+font-size: 30px;
+}
+
+h4{
+    text-align: end;
+    position: relative;
+    left: -120px;
+    font-size: 30px;
+color: rgb(116, 121, 121); 
+   }
