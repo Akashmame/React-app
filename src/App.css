@@ -1,38 +1,513 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgba(48, 156, 106, 0.61);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.main_body{
+  display: inline-block;
+  align-content: center;
+/* width: 250px; */
+
+  overflow: hidden;
+padding: 1.4%;
+}
+.head{
+  /* background: url("https://ourworldindata.org/uploads/2021/01/vaccinations-featured-768x404.png"); */
+  background-color: rgba(188, 188, 189, 0.555);
+display: flex;
+/* height: 300px; */
+}
+.head > h2{
+  padding: 10px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head > img{
+  position: relative;
+  /* bottom: -40px; */
+  /* left: -30px; */
+  height: 100px;
+}
+h1{
+  padding: 10px;
+  border-radius: 10px;
+}
+#logo{
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(18, 19, 19, 0.507);
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.active > img {
+  height: 70%;
+}
+
+#top{
+  /* position: fixed; */
+  /* right: 0px; */
+  height: 40px;
+  position: fixed;
+bottom: 20px;
+  right: 20px;
+  /* width: 5%; */
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: 0.6s;
+  z-index: 100000;
+  padding: 5px;
+  height: 50px;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+Button{
+  background: none;
+  border: none;
+  font-size: 16px;
+  outline-width: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1{
+  padding: 0px;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 3px rgba(148, 146, 146, 0.445);
+  font-family: 'Agency FB';
+
+}
+
+
+
+.tabs_container{
+  border-top: 2px solid rgb(7, 7, 88);
+  display: flex;
+  /* justify-content: space-between; */
+  background-color: rgba(224, 226, 226, 0.616);
+  /* padding: 20X; */
+  /* margin-top: 10X; */
+  padding-right: 0px;
+width: 100%;  
+border-radius: 10px 10px 0px 0px;
+
+  /* height: 60px; */
+}
+
+
+
+#tabs{
+  /* background-color: rgba(128, 128, 128, 0.171); */
+  /* height: 50px; */
+  /* padding: 5px; */
+  margin: 7px;
+  
+  width: 15%;
+  overflow: hidden;
+  align-items: center;
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 3px 20px 0px rgba(68, 65, 65, 0.521); */
+  cursor: pointer;
+}
+
+#tabs > h4{
+  /* position: relative;
+  top: -15px;
+  
+  left: 20px; */
+  font-size: 20px;
+  /* color: black; */
+  padding-top: 5px;
+  /* padding-left: 10px; */
+}
+
+#tabs:hover{
+border-bottom: 3px solid chartreuse;
+transform: scale(1.1);
+color: #03411d;
+}
+#notification{
+  height: 30px;
+  padding-right: 20px;
+  border-radius: 50%;
+  /* border-top: 2px solid red;
+  border-bottom: 1px solid chartreuse; */
+  /* box-shadow: 0px 2px 32px 0px rgba(119, 46, 46, 0.562); */
+}
+marquee{
+}
+
+marquee > h5{
+  color: red;
+}
+.updates{
+  /* background-color: rgba(73, 46, 38, 0.315); */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+padding-left: 10px;
+  /* justify-content: center; */
+}
+.dateinfo{
+  /* position: relative;
+  top: -60px;
+  left: 30px; */
+  padding: 10px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.first{
+  border: 1px red;
+  background-color: rgba(177, 83, 83, 0.342);
+}
+.second{
+  border: 1px blue;
+  background-color: rgba(89, 89, 240, 0.281);
+}
+.third{
+  background-color: rgba(146, 204, 87, 0.651);
+}
+.fourth{
+  background-color: rgba(94, 91, 91, 0.445);
+}
+
+pan{
+  background-color: rgba(40, 131, 32, 0.596);
+  padding: 5px;
+  backdrop-filter: blur(0.3px);
+
+  border-radius: 4px;
+  font-weight: bold;
+  color: black;
+
+}
+date{
+  color: rgb(9, 24, 236);
+}
+
+.section{
+  /* margin-top: 10px; */
+  width: 100%;
+  display: inline-block;
+  align-content: center;
+  overflow: inherit;
+  /* padding: 3px; */
+  margin: 0px;
+  border-radius:0px 0px 10px 10px;
+  /* background-color: #eaeded; */
+}
+#vac{
+  height: 250px;
+  width: 100%;
+}
+.first  h2{
+  color: rgb(156, 13, 13);
+}
+.second  h2{
+  color: rgb(45, 10, 109);
+}
+.third  h2{
+  color: rgb(39, 122, 6);
+}
+.fourth  h2{
+  color: rgb(66, 34, 34);
+}
+
+#box{
+  
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 16px;
+}
+
+
+
+
+
+
+
+.img_slider{
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  width: 100%;
+  /* margin-top: 100px; */
+}
+#footerdp{
+  /* height: 100px; */
+  padding: 10%;
+  border-radius: 20%;
+}
+
+s{
+  color: yellow;
+  text-decoration: none;
+}
+
+
+footer{
+  margin: 0px;
+}
+
+
+.map{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(216, 213, 213, 0.274);
+}
+
+#map{
+  height: 500px;
+}
+
+
+.article{
+  display: inline-block;
+  align-content: center;
+  overflow: inherit;
+width: 100%;
+
+}
+
+.article_content{
+
+  /* background-color: rgba(206, 206, 203, 0.13); */
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  margin: 4%;
+  width: 40%;
+
+}
+
+.article_content > h4{
+  margin-top: 20px;
+  font-size: 90%;
+}
+iframe{
+  width: 100%;
+  height: 200px;
+}
+#article_img{
+  height: 250px;
+  width: 120%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px  0px rgba(0, 0, 0, 0.568);
+}
+
+#mask{
+  height: 230px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#myInput {
+  background-color: rgb(219, 219, 230);    background-position: 10px 12px; /* Position the search icon */
+      background-repeat: no-repeat; /* Do not repeat the icon image */
+      width: 100%; /* Full-width */
+      font-size: 16px; /* Increase font-size */
+      padding: 12px 20px 12px 40px; /* Add some padding */
+      border: 1px solid rgb(72, 245, 3); /* Add a grey border */
+      margin-bottom: 12px; /* Add some space below the input */
+      border-radius: 30px;
+      outline-width: 0;
+  color: black;
+    
+  
+    }
+  
+    #myInput:hover{
+        background-color: rgb(228, 228, 235);
+        box-shadow: 2px 1px 10px 2px rgba(0, 0, 0, 0.274);
+    }
+  
+    #myInput:visited{
+      background-color: rgb(243, 45, 10);
+  
   }
-  to {
-    transform: rotate(360deg);
+    /*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+	@media
+  only screen 
+  and (max-width: 760px), (min-device-width: 768px) 
+  and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
   }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin: 0 0 1rem 0;
+  }
+    
+  tr:nth-child(odd) {
+    background: #ccc;
+  }
+  
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    border-radius: 10px;
+
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+  Label the data
+  You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+  */
+  td:nth-of-type(1):before { content: "State"; }
+  td:nth-of-type(2):before { content: "confirmed"; }
+  td:nth-of-type(3):before { content: "recovered"; }
+  td:nth-of-type(4):before { content: "tested"; }
+  td:nth-of-type(5):before { content: "deceased"; }
+  td:nth-of-type(6):before { content: "vaccinated"; }
+ }
+    .State{
+        width: 10%;
+    }
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    button{
+      background: none;
+      border: none;
+      font-size: 16px;
+      outline-width: 0px;
+  }
+
+
+  
+
+.contact{
+  padding: 10px;
+  border-top: 3px solid ;
+  margin-top: 30px;
+}
+
+
+.form{
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  /* background-color: rgba(243, 46, 243, 0.219); */
+  background-color:rgba(238, 236, 241, 0.247) ;
+}
+
+
+h6{
+  font-size: 20px;
+  padding: 3px;
+}
+
+input , textarea{
+  color: rgb(10, 10, 10);
+  padding: 7px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+
+
+  
+  background-color: rgba(243, 239, 239, 0.596);
+  width: 80%;
+  /* height: 35px; */
+  border-radius: 7px;
+  border: none;
+  outline-width: 0;
+}
+#send{
+  margin-top: 30px;
+  width: 30%;
+  border: none;
+  outline-width: 0;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0px 5px 34px 0px rgb(43, 39, 39);
+  background-color: rgba(25, 94, 65, 0.644);
+}
+
+#send:hover{
+  background-color: rgb(75, 70, 70);
 }
